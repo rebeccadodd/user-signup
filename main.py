@@ -21,7 +21,7 @@ def sign_up():
     if password == "" or " " in password or len(password) < 3 or len(password) > 20:
         password_error = "Invalid password"
 
-    if verify == "" or verify != password:
+    if verify != password:
         verify_error = "Your passwords do not match"
 
     if email != "":
